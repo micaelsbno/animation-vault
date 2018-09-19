@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F993FF;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16vw;
+  letter-spacing: -8px;
+  line-height: 0.9; 
+  text-align: center;
+}
+
+#first-banana {
+  transform: scale(-5,5);
+  height: 130px;
+  width: 7rem;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 45vh;
+  left: 57vw;
+  z-index: 1;
+}
+
+.banana {
+  transform: scale(-5,5);
+  height: 130px;
+  width: 7rem;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 43vh;
+  left: 49vw;
+}
+
+.banana-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: jello;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+.banana-container-two{
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: jello;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  z-index: 2 ;
+}
+
+.cap {
+  margin-left: 0.5rem;
+  position: relative;
+  background-color: #9B8A11;
+  height: 1rem;
+  width: 1rem;
+}
+
+.cap__right {
+  margin-left: 57%;
+  margin-bottom: 60%;
+}
+
+.cap__shadow {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  background-color: #766A13;
+}
+.cap__shadow--left {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #766A13;
+}
+
+.left-half {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.banana__body {
+  position: absolute;
+  top: 12%;
+  width: 109%;
+  height: 86%;
+  border: solid 2.2rem #000;
+  border-top: 0;
+  border-right: 0;
+  border-color: transparent transparent #F8E71C #F8E71C;
+  border-radius: 0px 0px 0px 5rem;
+}
+
+.banana__body--shadow {
+  position: absolute;
+  top: 12%;
+  width: 109%;
+  height: 86%;
+  border: solid 0.7rem #000;
+  border-top: 0;
+  border-right: 0;
+  border-color: transparent transparent #EDDD16 #EDDD16;
+  border-radius: 0px 0px 0px 5rem;
+}
+
+@keyframes jello {
+  from,
+  14.1%,
+  to { ransform: translate3d(0, 0, 0);}
+  17.2% { transform: skewX(0deg) skewY(0deg);}
+  20.3% { transform: skewX(0.25deg) skewY(0.25deg);}
+  23.4% { transform: skewX(-3.125deg) skewY(-3.125deg);}
+  26.5% { transform: skewX(1.5625deg) skewY(1.5625deg);}
+  29.6% { transform: skewX(-0.78125deg) skewY(-0.78125deg);}
+  32.7% { transform: skewX(0.390625deg) skewY(0.390625deg);}
+  34.8% { transform: skewX(0deg) skewY(0deg);}
+}

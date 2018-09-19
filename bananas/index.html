@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="banana.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+  <title>Bananas</title>
+</head>
+<body>
+
+<a href="../index.html">
+  <svg style="position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: scale(-7)" width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs></defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Artboard" transform="translate(-74.000000, -41.000000)" fill="#FFFFFF">
+              <path d="M81.7499791,48.1640788 L76.4374918,53.4765661 C76.2552004,53.6588576 76.0338471,53.750003 75.7734309,53.750003 C75.5130146,53.750003 75.2916614,53.6588576 75.10937,53.4765661 L74.249997,52.5781308 C74.0677056,52.3958393 73.9765602,52.1744861 73.9765602,51.9140699 C73.9765602,51.6536536 74.0677056,51.4323004 74.249997,51.2500089 L77.9999881,47.5000179 L74.249997,43.7500268 C74.0677056,43.5677354 73.9765602,43.3463821 73.9765602,43.0859659 C73.9765602,42.8255497 74.0677056,42.6041964 74.249997,42.421905 L75.10937,41.5234696 C75.2916614,41.3411782 75.5130146,41.2500328 75.7734309,41.2500328 C76.0338471,41.2500328 76.2552004,41.3411782 76.4374918,41.5234696 L81.7499791,46.835957 C81.9322706,47.0182484 82.023416,47.2396016 82.023416,47.5000179 C82.023416,47.7604341 81.9322706,47.9817874 81.7499791,48.1640788 Z" id="angle-right"></path>
+          </g>
+      </g>
+  </svg>
+</a>
+
+<a href="../banana-cake/index.html">
+  <svg style="position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: scale(7)" width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs></defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Artboard" transform="translate(-74.000000, -41.000000)" fill="#FFFFFF">
+              <path d="M81.7499791,48.1640788 L76.4374918,53.4765661 C76.2552004,53.6588576 76.0338471,53.750003 75.7734309,53.750003 C75.5130146,53.750003 75.2916614,53.6588576 75.10937,53.4765661 L74.249997,52.5781308 C74.0677056,52.3958393 73.9765602,52.1744861 73.9765602,51.9140699 C73.9765602,51.6536536 74.0677056,51.4323004 74.249997,51.2500089 L77.9999881,47.5000179 L74.249997,43.7500268 C74.0677056,43.5677354 73.9765602,43.3463821 73.9765602,43.0859659 C73.9765602,42.8255497 74.0677056,42.6041964 74.249997,42.421905 L75.10937,41.5234696 C75.2916614,41.3411782 75.5130146,41.2500328 75.7734309,41.2500328 C76.0338471,41.2500328 76.2552004,41.3411782 76.4374918,41.5234696 L81.7499791,46.835957 C81.9322706,47.0182484 82.023416,47.2396016 82.023416,47.5000179 C82.023416,47.7604341 81.9322706,47.9817874 81.7499791,48.1640788 Z" id="angle-right"></path>
+          </g>
+      </g>
+  </svg>
+</a>
+
+  <h1>THAT IS BANANAS</h1>
+  <div class="banana-container">
+    <main class="banana" id='first-banana'>
+      <section class="left-half">
+        <div class="cap">
+          <div class="cap__shadow"></div>
+        </div>
+        <div class="banana__body"></div>
+        <div class="banana__body--shadow"></div>
+      </section>
+      <section class="right-half">
+        <div class="cap cap__right">
+          <div class="cap__shadow--left"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="banana-container-two">
+    <main class="banana">
+      <section class="left-half">
+        <div class="cap">
+          <div class="cap__shadow"></div>
+        </div>
+        <div class="banana__body"></div>
+        <div class="banana__body--shadow"></div>
+      </section>
+      <section class="right-half">
+        <div class="cap cap__right">
+          <div class="cap__shadow--left"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  </div>
+  <script>
+    function resizeBananas() {
+      let width = window.innerWidth
+      document.querySelectorAll('.banana').forEach((banana)=>{
+        banana.style.transform = `scale(${-3.3 * (width/1200)},${3.3 * (width /1200)})`
+      })
+    }
+    window.addEventListener('resize', resizeBananas)
+    resizeBananas()
+  </script>
+</body>
+</html>
